@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(22, 22, 22);
+  font-family: "Orbitron", sans-serif;
+}
+
+#container {
+  margin-top: 15rem;
+}
+
+/* DAYS */
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-left: 30px;
+  font-size: 1.7rem;
+  color: gray;
+}
+
+.active-day {
+  color: rgb(17, 218, 134);
+}
+
+/* TIME */
+
+#display-time {
+  font-size: 9rem;
+  color: rgb(17, 218, 134);
+  font-weight: bold;
+  min-width: 50%;
+}
+
+/* SET TIME BUTTONS */
+
+#set-time-btn {
+  margin-top: 30px;
+}
+
+button {
+  margin: 5px 30px;
+  font-size: 2rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: gray;
+  background: none;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 2px gray;
+}
+
+.active {
+  color: rgb(17, 218, 134);
+  border: 2px solid rgb(17, 218, 134);
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1224px) {
+  #container {
+    margin-top: 20rem;
+  }
+  p {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+  #display-time {
+    font-size: 4.5rem;
+  }
+  button {
+    font-size: 1.5rem;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .days p {
+    display: none;
+  }
+  .days .active-day {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  #display-time {
+    font-size: 3rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+}
