@@ -29,7 +29,7 @@ const replaceTime = () => {
     m = today.getMinutes(),
     s = today.getSeconds();
 
-  if (showTwelveHourTime && h > 12) {
+  if ((showTwelveHourTime && h > 12) || (showTwelveHourTime && h == 12)) {
     if (s < 10) {
       s = "0" + s;
     }
